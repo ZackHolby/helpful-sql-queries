@@ -34,3 +34,8 @@ WHERE date < DATEADD(dd,-N,GETDATE());
 DELETE FROM dbo.TABLE_NAME
 WHERE date < DATEADD(hh,-N,GETDATE());
 ```
+
+#### Rebuild fragmented Index
+```
+ALTER INDEX PK_Currencies ON dbo.Currencies REBUILD;
+```
