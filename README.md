@@ -37,5 +37,5 @@ WHERE date < DATEADD(hh,-N,GETDATE());
 
 #### Rebuild fragmented Index
 ```
-ALTER INDEX PK_Currencies ON dbo.Currencies REBUILD;
+ALTER INDEX index_name ON table_name REBUILD;
 ```
